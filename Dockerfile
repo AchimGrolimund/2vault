@@ -1,5 +1,5 @@
 # Obtain certs for final stage
-FROM alpine:3.11.5 as authority
+FROM alpine:latest as authority
 RUN mkdir /user && \
     echo 'appuser:x:1000:1000:appuser:/:' > /user/passwd && \
     echo 'appgroup:x:1000:' > /user/group
